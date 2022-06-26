@@ -1,0 +1,139 @@
+loadstring(game:HttpGet(('https://pastebin.com/raw/5UNZVdBn'),true))()
+
+-- Tower of Hell Instant Winner
+-- Version: 1.0
+-- Made by Mich
+-- YouTube: https://www.youtube.com/channel/UCT0ZKUxu3QBemWlGpNSDyAw?view_as=subscriber
+
+local ToHInWin = Instance.new("ScreenGui")
+local ToHInWin_2 = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local TpToEnd = Instance.new("TextButton")
+local InfiniteJump = Instance.new("TextButton")
+local Undetected = Instance.new("TextLabel")
+local MadeByMich = Instance.new("TextLabel")
+local Hook = Instance.new("TextButton")
+
+ToHInWin.Name = "ToHInWin"
+ToHInWin.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ToHInWin.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ToHInWin_2.Name = "ToHInWin"
+ToHInWin_2.Parent = ToHInWin
+ToHInWin_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToHInWin_2.BackgroundTransparency = 0.500
+ToHInWin_2.Position = UDim2.new(0.116374865, 0, 0.556242228, 0)
+ToHInWin_2.Size = UDim2.new(0, 294, 0, 342)
+
+Title.Name = "Title"
+Title.Parent = ToHInWin_2
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0, 294, 0, 46)
+Title.Font = Enum.Font.SourceSansLight
+Title.Text = "Tower of Hell InWin"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+TpToEnd.Name = "TpToEnd"
+TpToEnd.Parent = ToHInWin_2
+TpToEnd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TpToEnd.BorderSizePixel = 0
+TpToEnd.Position = UDim2.new(0.159863949, 0, 0.236842096, 0)
+TpToEnd.Size = UDim2.new(0, 200, 0, 50)
+TpToEnd.Font = Enum.Font.SourceSansLight
+TpToEnd.Text = "Teleport to End"
+TpToEnd.TextColor3 = Color3.fromRGB(0, 0, 0)
+TpToEnd.TextScaled = true
+TpToEnd.TextSize = 14.000
+TpToEnd.TextWrapped = true
+
+InfiniteJump.Name = "InfiniteJump"
+InfiniteJump.Parent = ToHInWin_2
+InfiniteJump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteJump.BorderSizePixel = 0
+InfiniteJump.Position = UDim2.new(0.159863949, 0, 0.412280679, 0)
+InfiniteJump.Size = UDim2.new(0, 200, 0, 60)
+InfiniteJump.Font = Enum.Font.SourceSansLight
+InfiniteJump.Text = "Infinite Jump (Gear)"
+InfiniteJump.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteJump.TextSize = 29.000
+InfiniteJump.TextWrapped = true
+
+Undetected.Name = "Undetected"
+Undetected.Parent = ToHInWin_2
+Undetected.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Undetected.BackgroundTransparency = 1.000
+Undetected.BorderSizePixel = 0
+Undetected.Position = UDim2.new(0.119047627, 0, 0.751461983, 0)
+Undetected.Size = UDim2.new(0, 224, 0, 46)
+Undetected.Font = Enum.Font.SourceSansLight
+Undetected.Text = "Undetected"
+Undetected.TextColor3 = Color3.fromRGB(255, 255, 255)
+Undetected.TextScaled = true
+Undetected.TextSize = 14.000
+Undetected.TextWrapped = true
+
+MadeByMich.Name = "MadeByMich"
+MadeByMich.Parent = ToHInWin_2
+MadeByMich.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MadeByMich.BackgroundTransparency = 1.000
+MadeByMich.BorderSizePixel = 0
+MadeByMich.Position = UDim2.new(0.119047619, 0, 0.88596487, 0)
+MadeByMich.Size = UDim2.new(0, 224, 0, 31)
+MadeByMich.Font = Enum.Font.SourceSansLight
+MadeByMich.Text = "Made by Mich"
+MadeByMich.TextColor3 = Color3.fromRGB(255, 255, 255)
+MadeByMich.TextScaled = true
+MadeByMich.TextSize = 14.000
+MadeByMich.TextWrapped = true
+
+Hook.Name = "Hook"
+Hook.Parent = ToHInWin_2
+Hook.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hook.BorderSizePixel = 0
+Hook.Position = UDim2.new(0.159863949, 0, 0.616959035, 0)
+Hook.Size = UDim2.new(0, 200, 0, 50)
+Hook.Font = Enum.Font.SourceSansLight
+Hook.Text = "Hook (Gear)"
+Hook.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hook.TextSize = 31.000
+Hook.TextWrapped = true
+
+local function JPUVAKV_fake_script() -- TpToEnd.TpToEnd 
+	local script = Instance.new('Script', TpToEnd)
+
+	TpToEnd.MouseButton1Down:connect(function()
+		
+	local endzone = game.Workspace.tower.sections.finish.exit.ParticleBrick.CFrame
+	 
+	local player = game.Players.LocalPlayer.Character
+	player.HumanoidRootPart.CFrame = endzone
+		
+	end)
+end
+coroutine.wrap(JPUVAKV_fake_script)()
+local function JBMG_fake_script() -- InfiniteJump.InfiniteJUmp 
+	local script = Instance.new('Script', InfiniteJump)
+
+	InfiniteJump.MouseButton1Down:connect(function()
+	local copy = game.ReplicatedStorage.Gear.jump
+	
+	copy.Parent = game.Players.LocalPlayer.Backpack
+	end)
+end
+coroutine.wrap(JBMG_fake_script)()
+local function ISYAFG_fake_script() -- Hook.TpToEnd 
+	local script = Instance.new('Script', Hook)
+
+	TpToEnd.MouseButton1Down:connect(function()
+		
+	local copy = game.ReplicatedStorage.Gear.hook
+	
+	copy.Parent = game.Players.LocalPlayer.Backpack
+		
+	end)
+end
+coroutine.wrap(ISYAFG_fake_script)()
